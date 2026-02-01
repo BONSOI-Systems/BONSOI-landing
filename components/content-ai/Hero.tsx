@@ -4,6 +4,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
@@ -82,7 +83,14 @@ export default function Hero() {
                             <div className="aspect-[4/3] md:aspect-video lg:aspect-square relative bg-gradient-to-br from-gray-900 to-black p-4 sm:p-6 md:p-8 flex items-center justify-center">
                                 {/* Gradient Orb Effect */}
                                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-blue-500/20 rounded-full blur-[40px] md:blur-[60px]" />
-                                <div className="absolute inset-0 bg-[url('/img/hero.png')] bg-cover bg-center opacity-70 mix-blend-overlay"></div>
+                                <Image
+                                    src="/img/hero.png"
+                                    alt="Future Ready AI Solutions"
+                                    fill
+                                    priority
+                                    className="object-cover object-center opacity-70 mix-blend-overlay"
+                                    sizes="(max-width: 768px) 100vw, 50vw"
+                                />
                                 <div className="relative z-10 text-left">
                                     <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mb-2 font-mono tracking-tight text-blue-200 h-12 sm:h-14 md:h-16 flex">
                                         <span className="mr-1 text-green-400">$</span>

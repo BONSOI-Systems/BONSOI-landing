@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 
 interface VideoProps {
   videoId: string;
@@ -13,11 +14,13 @@ export function Video({ videoId }: Readonly<VideoProps>) {
   return (
     <div className="relative w-full aspect-video max-h-[90vh] overflow-hidden bg-black cursor-pointer group rounded-xl md:rounded-2xl">
       {/* YouTube Thumbnail */}
+      {/* YouTube Thumbnail */}
       {!playVideo && (
-        <img
+        <Image
           src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
           alt="Video Thumbnail"
-          className="absolute inset-0 w-full h-full object-cover opacity-60"
+          fill
+          className="object-cover opacity-60"
         />
       )}
 
@@ -56,13 +59,13 @@ export function Video({ videoId }: Readonly<VideoProps>) {
         ></iframe>
       )}
 
-      {/* Placeholder image if not playing - simplistic gradient currently, could be replaced by a thumbnail */}
-      {/* YouTube Thumbnail */}
+      {/* Placeholder image if not playing */}
       {!playVideo && (
-        <img
-          src={`https://img.youtube.com/vi/zD7gvXsl2oo/maxresdefault.jpg`}
-          alt="Video Thumbnail"
-          className="absolute inset-0 w-full h-full object-cover opacity-80 mix-blend-overlay"
+        <Image
+          src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
+          alt="Video Thumbnail Overlay"
+          fill
+          className="object-cover opacity-80 mix-blend-overlay"
         />
       )}
     </div>

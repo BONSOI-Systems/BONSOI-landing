@@ -103,7 +103,7 @@ export const metadata: Metadata = {
     description: 'Transform your business with cutting-edge AI/ML, Web3, and Full-Stack development solutions. Partner with BONSOI Systems for innovative technology solutions.',
     images: [
       {
-        url: '/og-image.png',
+        url: '/img/hero.png',
         width: 1200,
         height: 630,
         alt: 'BONSOI Systems - Enterprise Technology Solutions',
@@ -116,7 +116,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'BONSOI Systems | Enterprise AI/ML & Full-Stack Solutions',
     description: 'Transform your business with cutting-edge AI/ML, Web3, and Full-Stack development solutions.',
-    images: ['/og-image.png'],
+    images: ['/img/hero.png'],
     creator: '@bonsoisystems',
   },
 
@@ -124,11 +124,10 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: '/favicon.ico' },
-      { url: '/icon-16x16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/icon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/logo.png', type: 'image/png' },
     ],
     apple: [
-      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+      { url: '/logo.png', type: 'image/png' },
     ],
   },
 

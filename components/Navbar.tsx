@@ -33,7 +33,7 @@ export default function Navbar() {
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
                 <Link href="/" className="text-xl sm:text-2xl md:text-3xl tracking-tighter hover:opacity-80 transition-opacity">
-                    <span className="font-cinzel">BONSOI</span><span className="text-white font-blinker ml-1 sm:ml-2">Systems</span>
+                    <span className="font-cinzel text-white">BONSOI</span><span className="text-white font-blinker ml-1 sm:ml-2">Systems</span>
                 </Link>
 
                 {/* Desktop Nav */}

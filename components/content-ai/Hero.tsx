@@ -24,7 +24,7 @@ export default function Hero() {
                             className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 mb-6 md:mb-8"
                         >
                             <span className="flex h-2 w-2 rounded-full bg-blue-500 animate-pulse" />
-                            <span className="text-[10px] sm:text-xs font-medium text-gray-200 uppercase tracking-wide">
+                            <span className="text-[10px] sm:text-xs font-medium text-white uppercase tracking-wide">
                                 Innovation at the Core
                             </span>
                         </motion.div>
@@ -72,11 +72,8 @@ export default function Hero() {
                         </motion.div>
                     </div>
 
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.8, delay: 0.2 }}
-                        className="lg:w-1/2 relative w-full max-w-lg lg:max-w-none"
+                    <div
+                        className="lg:w-1/2 relative w-full mb-10 lg:mb-0 max-w-lg lg:max-w-none"
                     >
                         <div className="relative z-10 rounded-xl overflow-hidden border border-white/10 shadow-xl shadow-blue-50/10">
                             {/* Use ImagineAI style visual - placeholder or the heroImg with overlay */}
@@ -89,6 +86,7 @@ export default function Hero() {
                                     fill
                                     priority
                                     fetchPriority="high"
+                                    quality={60}
                                     className="object-cover object-center opacity-70 mix-blend-overlay"
                                     sizes="(max-width: 768px) 100vw, 50vw"
                                 />
@@ -101,7 +99,7 @@ export default function Hero() {
                                 </div>
                             </div>
                         </div>
-                    </motion.div>
+                    </div>
                 </div>
             </div>
         </section>

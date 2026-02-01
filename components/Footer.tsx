@@ -18,26 +18,26 @@ export default function Footer() {
                             Reach content market fit with AI-powered personas.
                         </p>
                         <div className="flex gap-3 sm:gap-4">
-                            <Link href="https://github.com/BONSOI-Systems" className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-white/10 hover:text-white transition-colors">
+                            <Link aria-label="GitHub" href="https://github.com/BONSOI-Systems" className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-white/10 hover:text-white transition-colors">
                                 <Github className="w-4 h-4 sm:w-5 sm:h-5" />
                             </Link>
-                            <Link href="https://www.linkedin.com/company/bonsoi-systems/" className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-white/10 hover:text-white transition-colors">
+                            <Link aria-label="LinkedIn" href="https://www.linkedin.com/company/bonsoi-systems/" className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-white/10 hover:text-white transition-colors">
                                 <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
                             </Link>
-                            <Link href="https://chat.whatsapp.com/L11Rq3WgjrNLWmuYtpS7TV" className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-white/10 hover:text-white transition-colors">
+                            <Link aria-label="WhatsApp" href="https://chat.whatsapp.com/L11Rq3WgjrNLWmuYtpS7TV" className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-white/10 hover:text-white transition-colors">
                                 <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5" />
                             </Link>
-                            <Link href="https://x.com/BonsoiSystems" className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-white/10 hover:text-white transition-colors">
+                            <Link aria-label="Twitter / X" href="https://x.com/BonsoiSystems" className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-white/10 hover:text-white transition-colors">
                                 <Twitter className="w-4 h-4 sm:w-5 sm:h-5" />
                             </Link>
-                            <Link href="https://www.instagram.com/bonsoisystems/" className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-white/10 hover:text-white transition-colors">
+                            <Link aria-label="Instagram" href="https://www.instagram.com/bonsoisystems/" className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-white/10 hover:text-white transition-colors">
                                 <Instagram className="w-4 h-4 sm:w-5 sm:h-5" />
                             </Link>
                         </div>
                     </div>
 
                     <div>
-                        <h4 className="text-base sm:text-lg font-bold mb-4 sm:mb-6">Product</h4>
+                        <h3 className="text-base sm:text-lg font-bold mb-4 sm:mb-6">Product</h3>
                         <ul className="space-y-3 sm:space-y-4 text-gray-400 text-sm sm:text-base">
                             <li><Link href="/services" className="hover:text-white transition-colors">Services</Link></li>
                             <li><Link href="/case-studies" className="hover:text-white transition-colors">Case Studies</Link></li>
@@ -46,7 +46,7 @@ export default function Footer() {
                     </div>
 
                     <div>
-                        <h4 className="text-base sm:text-lg font-bold mb-4 sm:mb-6">Company</h4>
+                        <h3 className="text-base sm:text-lg font-bold mb-4 sm:mb-6">Company</h3>
                         <ul className="space-y-3 sm:space-y-4 text-gray-400 text-sm sm:text-base">
                             <li><Link href="/about" className="hover:text-white transition-colors">About</Link></li>
                             <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
@@ -54,7 +54,7 @@ export default function Footer() {
                     </div>
 
                     <div>
-                        <h4 className="text-base sm:text-lg font-bold mb-4 sm:mb-6">Legal</h4>
+                        <h3 className="text-base sm:text-lg font-bold mb-4 sm:mb-6">Legal</h3>
                         <ul className="space-y-3 sm:space-y-4 text-gray-400 text-sm sm:text-base">
                             <li><Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
                             <li><Link href="/terms" className="hover:text-white transition-colors">User Agreement</Link></li>
@@ -64,10 +64,10 @@ export default function Footer() {
                 </div>
 
                 <div className="border-t border-white/10 pt-6 sm:pt-8 flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4">
-                    <p className="text-gray-500 text-xs sm:text-sm text-center md:text-left">
+                    <p className="text-gray-400 text-xs sm:text-sm text-center md:text-left">
                         © {new Date().getFullYear()} Bonsoi Systems. All rights reserved.
                     </p>
-                    <p className="text-gray-500 text-xs sm:text-sm">
+                    <p className="text-gray-400 text-xs sm:text-sm">
                         Designed for impact.
                     </p>
                 </div>

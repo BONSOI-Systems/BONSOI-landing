@@ -24,8 +24,8 @@ export default function Hero() {
                             className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 mb-6 md:mb-8"
                         >
                             <span className="flex h-2 w-2 rounded-full bg-blue-500 animate-pulse" />
-                            <span className="text-[10px] sm:text-xs font-medium text-gray-300 uppercase tracking-wide">
-                                Trusted by Industry Leaders
+                            <span className="text-[10px] sm:text-xs font-medium text-gray-200 uppercase tracking-wide">
+                                Innovation at the Core
                             </span>
                         </motion.div>
 
@@ -88,6 +88,7 @@ export default function Hero() {
                                     alt="Future Ready AI Solutions"
                                     fill
                                     priority
+                                    fetchPriority="high"
                                     className="object-cover object-center opacity-70 mix-blend-overlay"
                                     sizes="(max-width: 768px) 100vw, 50vw"
                                 />
@@ -96,7 +97,7 @@ export default function Hero() {
                                         <span className="mr-1 text-green-400">$</span>
                                         <Typewriter texts={["/..Future Ready", "/..AI/ML Solutions", "/..Web3 Solutions", "/..Full-Stack Solutions"]} delay={80} pauseTime={2000} />
                                     </h1>
-                                    <h3 className="text-gray-400 text-sm sm:text-base md:text-lg lg:text-xl">Scalable Architecture for Growing Businesses</h3>
+                                    <h2 className="text-gray-400 text-sm sm:text-base md:text-lg lg:text-xl">Scalable Architecture for Growing Businesses</h2>
                                 </div>
                             </div>
                         </div>

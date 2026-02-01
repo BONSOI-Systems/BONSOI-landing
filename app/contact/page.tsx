@@ -4,6 +4,7 @@ import { Container } from "@/components/Container";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useMemo, useEffect } from "react";
 import { Mail, Phone, Clock, Send, Linkedin, Github, MessageCircle, ArrowRight, CheckCircle2, AlertCircle, X, Calendar } from "lucide-react";
+import { identifyUser, trackEvent } from "@/lib/clarity";
 
 // Validation helpers
 const validators = {
@@ -325,6 +326,11 @@ export default function ContactPage() {
           message: "",
         });
         setTouched({});
+
+        // Track successful submission in Clarity
+        identifyUser(formData.email, undefined, undefined, formData.name);
+        trackEvent("contact_form_submitted");
+
         setTimeout(() => setSubmitStatus("idle"), 5000);
       } else {
         setSubmitStatus("error");

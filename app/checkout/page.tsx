@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState, Suspense } from "react";
 import { Check, ArrowLeft, AlertCircle, Loader2 } from "lucide-react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
+import { trackEvent, upgradeSession } from "@/lib/clarity";
 
 // Type definitions for PayPal SDK v5
 declare global {
@@ -115,6 +116,10 @@ function CheckoutContent() {
         };
 
         loadPayPalSDK();
+
+        // Upgrade session for checkout flow
+        upgradeSession("checkout_started");
+        trackEvent("checkout_page_viewed");
     }, []);
 
     const initializePayPal = async () => {
@@ -190,6 +195,7 @@ function CheckoutContent() {
                     const captureData = await res.json();
                     console.log("Payment captured:", captureData);
                     setPaymentStatus("success");
+                    trackEvent("payment_successful");
                 } catch (err: any) {
                     console.error("Capture Failed:", err);
                     setError(err.message || "Payment capture failed");

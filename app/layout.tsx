@@ -2,9 +2,9 @@ import type { Metadata, Viewport } from "next";
 import { Inter, JetBrains_Mono, Cinzel_Decorative, Blinker } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
-
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import ClarityAnalytics from "../components/ClarityAnalytics";
 import { PopupWidget } from "../components/PopupWidget";
 
 const inter = Inter({
@@ -262,6 +262,7 @@ export default function RootLayout({
       </head>
       <body className={`${inter.className} ${jetbrainsMono.variable} ${cinzel.variable} ${blinker.variable}`}>
         <ThemeProvider attribute="class">
+          <ClarityAnalytics />
           <Navbar />
           <div>{children}</div>
           <Footer />

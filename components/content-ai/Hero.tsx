@@ -88,7 +88,7 @@ export default function Hero() {
                                     fetchPriority="high"
                                     quality={60}
                                     className="object-cover object-center opacity-70 mix-blend-overlay"
-                                    sizes="(max-width: 768px) 100vw, 50vw"
+                                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 512px, 50vw"
                                 />
                                 <div className="relative z-10 text-left">
                                     <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mb-2 font-mono tracking-tight text-blue-200 h-12 sm:h-14 md:h-16 flex">

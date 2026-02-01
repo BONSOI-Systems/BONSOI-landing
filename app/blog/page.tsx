@@ -2,10 +2,6 @@ import { Container } from "@/components/Container";
 import { SectionTitle } from "@/components/SectionTitle";
 import Link from "next/link";
 
-export const metadata = {
-  title: "Blog | BONSOI Systems - Tech Insights & Industry Trends",
-  description: "Stay updated with the latest in AI/ML, Web3, blockchain, and software development. Expert insights and tutorials from BONSOI Systems.",
-};
 
 export default function BlogPage() {
   return (
@@ -15,7 +11,7 @@ export default function BlogPage() {
           preTitle="Our Blog"
           title="Insights, Tutorials & Industry Trends"
         >
-          Stay ahead of the curve with expert analysis, technical tutorials, and thought leadership 
+          Stay ahead of the curve with expert analysis, technical tutorials, and thought leadership
           on AI, blockchain, full-stack development, and emerging technologies.
         </SectionTitle>
 
@@ -30,7 +26,7 @@ export default function BlogPage() {
                 The Future of AI in Enterprise: Trends for 2026
               </h2>
               <p className="mb-6 text-lg text-white text-opacity-90">
-                Explore how artificial intelligence is reshaping enterprise operations, from automated decision-making 
+                Explore how artificial intelligence is reshaping enterprise operations, from automated decision-making
                 to predictive analytics. Learn about the latest AI trends and how businesses can prepare for the AI-driven future.
               </p>
               <div className="flex items-center mb-6 space-x-4 text-sm">

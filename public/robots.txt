@@ -1,0 +1,13 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Disallow admin and API routes
+Disallow: /api/
+Disallow: /checkout/
+
+# Sitemap location
+Sitemap: https://bonsoi.vercel.app/sitemap.xml
+
+# Crawl delay (optional, be respectful to the server)
+Crawl-delay: 1

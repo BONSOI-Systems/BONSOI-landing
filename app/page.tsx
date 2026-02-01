@@ -1,5 +1,6 @@
 
 import React from 'react';
+import type { Metadata } from 'next';
 import Hero from '../components/content-ai/Hero';
 import Features from '../components/content-ai/Features';
 import { TrustedBy } from '../components/TrustedBy';
@@ -9,6 +10,21 @@ import { HowItWorks } from '../components/HowItWorks';
 import { Pricing } from '../components/Pricing';
 import { Video } from '../components/Video';
 import { Cta } from '../components/Cta';
+
+export const metadata: Metadata = {
+  title: 'BONSOI Systems | Enterprise AI/ML & Full-Stack Solutions',
+  description: 'Transform your business with cutting-edge AI/ML, Web3, and Full-Stack development solutions. Industry-leading technology partner for digital transformation.',
+  keywords: 'AI development, ML solutions, Web3, blockchain, full-stack development, enterprise software, digital transformation, BONSOI Systems',
+  openGraph: {
+    title: 'BONSOI Systems | Enterprise AI/ML & Full-Stack Solutions',
+    description: 'Transform your business with cutting-edge AI/ML, Web3, and Full-Stack development solutions.',
+    url: 'https://bonsoi.vercel.app',
+    type: 'website',
+  },
+  alternates: {
+    canonical: 'https://bonsoi.vercel.app',
+  },
+};
 
 export default function Home() {
   return (

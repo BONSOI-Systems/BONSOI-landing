@@ -1,17 +1,13 @@
 import { Container } from "@/components/Container";
 import { SectionTitle } from "@/components/SectionTitle";
 import Link from "next/link";
-import { 
+import {
   BriefcaseIcon,
   MapPinIcon,
   ClockIcon,
-  CurrencyDollarIcon 
+  CurrencyDollarIcon
 } from "@heroicons/react/24/solid";
 
-export const metadata = {
-  title: "Careers | BONSOI Systems - Join Our Team",
-  description: "Build the future with BONSOI Systems. Explore exciting career opportunities in AI/ML, Web3, and full-stack development.",
-};
 
 export default function CareersPage() {
   return (
@@ -21,7 +17,7 @@ export default function CareersPage() {
           preTitle="Join Our Team"
           title="Build the Future With Us"
         >
-          We're looking for passionate innovators, problem-solvers, and tech enthusiasts 
+          We're looking for passionate innovators, problem-solvers, and tech enthusiasts
           who want to create cutting-edge solutions that transform businesses worldwide.
         </SectionTitle>
 

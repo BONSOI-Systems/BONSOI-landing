@@ -1,0 +1,53 @@
+{
+  "name": "bonsoi-systems",
+  "version": "3.0.0",
+  "description": "BONSOI Systems - Innovative AI/ML & Full-Stack Software Solutions",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vishalmaurya850/bonsoi"
+  },
+  "keywords": [
+    "nextjs",
+    "tailwindcss",
+    "bonsoi",
+    "ai-ml",
+    "web3",
+    "full-stack"
+  ],
+  "author": "BONSOI Systems",
+  "license": "ISC",
+  "dependencies": {
+    "@headlessui/react": "^2.2.0",
+    "@heroicons/react": "^2.2.0",
+    "@paypal/paypal-js": "^9.2.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.29.2",
+    "lucide-react": "^0.563.0",
+    "next": "^16.0.4",
+    "next-themes": "^0.4.3",
+    "nodemailer": "^7.0.13",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-hook-form": "^7.54.0",
+    "tailwind-merge": "^3.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "@types/nodemailer": "^7.0.9",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "baseline-browser-mapping": "^2.9.19",
+    "eslint": "^9.15.0",
+    "eslint-config-next": "^16.0.4",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "typescript": "^5.7.2"
+  }
+}

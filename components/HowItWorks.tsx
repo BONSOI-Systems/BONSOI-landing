@@ -18,17 +18,17 @@ export function HowItWorks() {
         {
             id: "01",
             title: "Discovery & Strategy",
-            description: "We analyze your business needs and define a clear AI transformation roadmap.",
+            description: "We start with a deep-dive into your business goals, technical requirements, and competitive landscape. Our engineers and consultants design a customized technology roadmap — choosing the right AI/ML models, blockchain architecture, or full-stack framework to maximize ROI. Every decision is grounded in data, not guesswork.",
         },
         {
             id: "02",
             title: "Development & AI Integration",
-            description: "Our engineers build your solution using cutting-edge models and scalable architecture.",
+            description: "Our expert engineering teams build your solution using agile sprints with weekly demos and continuous feedback loops. We integrate cutting-edge AI and machine learning models, enforce enterprise-grade security, and write clean maintainable code — whether it's a custom LLM pipeline, a DeFi smart contract, or a scalable SaaS backend.",
         },
         {
             id: "03",
             title: "Launch & Optimization",
-            description: "We deploy your system and continuously optimize performance based on real-world data.",
+            description: "Deployment is just the beginning. We handle cloud provisioning, CI/CD pipeline setup, and performance monitoring. We continuously analyze real-world usage data to fine-tune AI models and optimize system performance, ensuring your product scales as your user base grows.",
         },
     ];
 

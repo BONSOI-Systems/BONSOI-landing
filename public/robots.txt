@@ -2,12 +2,15 @@
 User-agent: *
 Allow: /
 
-# Disallow admin and API routes
+# Allow key static assets
+Allow: /sitemap.xml
+Allow: /manifest.json
+Allow: /robots.txt
+
+# Disallow internal/utility routes
 Disallow: /api/
 Disallow: /checkout/
+Disallow: /_next/
 
 # Sitemap location
 Sitemap: https://bonsoi.vercel.app/sitemap.xml
-
-# Crawl delay (optional, be respectful to the server)
-Crawl-delay: 1

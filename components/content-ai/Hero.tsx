@@ -91,11 +91,13 @@ export default function Hero() {
                                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 512px, 50vw"
                                 />
                                 <div className="relative z-10 text-left">
-                                    <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mb-2 font-mono tracking-tight text-blue-200 h-12 sm:h-14 md:h-16 flex">
+                                    {/* Static text for crawlers - visually hidden */}
+                                    <span className="sr-only">AI/ML Solutions, Web3 Solutions, Full-Stack Development — Future Ready Technology</span>
+                                    <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mb-2 font-mono tracking-tight text-blue-200 h-12 sm:h-14 md:h-16 flex" aria-hidden="true">
                                         <span className="mr-1 text-green-400">$</span>
                                         <Typewriter texts={["/..Future Ready", "/..AI/ML Solutions", "/..Web3 Solutions", "/..Full-Stack Solutions"]} delay={80} pauseTime={2000} />
-                                    </h1>
-                                    <h2 className="text-gray-400 text-sm sm:text-base md:text-lg lg:text-xl">Scalable Architecture for Growing Businesses</h2>
+                                    </p>
+                                    <p className="text-gray-400 text-sm sm:text-base md:text-lg lg:text-xl">Scalable Architecture for Growing Businesses</p>
                                 </div>
                             </div>
                         </div>

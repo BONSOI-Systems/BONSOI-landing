@@ -14,8 +14,11 @@ export default function Footer() {
                         <Link href="/" className="tracking-tighter hover:opacity-80 transition-opacity">
                             <img src="/img/squarelogo.png" alt="BONSOI Systems" className="w-36 sm:w-44 md:w-52" />
                         </Link>
-                        <p className="text-gray-400 mt-4 sm:mt-6 mb-4 sm:mb-6 text-sm sm:text-base">
-                            Reach content market fit with AI-powered personas.
+                        <p className="text-gray-400 mt-4 sm:mt-6 mb-1 sm:mb-2 text-sm sm:text-base">
+                            Enterprise AI/ML, Web3, and Full-Stack development solutions that transform businesses worldwide.
+                        </p>
+                        <p className="text-gray-500 mb-4 sm:mb-6 text-xs sm:text-sm">
+                            Serving clients globally · Based in India
                         </p>
                         <div className="flex gap-3 sm:gap-4">
                             <Link aria-label="GitHub" href="https://github.com/BONSOI-Systems" className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-white/10 hover:text-white transition-colors">
@@ -40,6 +43,7 @@ export default function Footer() {
                         <h3 className="text-base sm:text-lg font-bold mb-4 sm:mb-6">Product</h3>
                         <ul className="space-y-3 sm:space-y-4 text-gray-400 text-sm sm:text-base">
                             <li><Link href="/services" className="hover:text-white transition-colors">Services</Link></li>
+                            <li><Link href="/solutions" className="hover:text-white transition-colors">Solutions</Link></li>
                             <li><Link href="/case-studies" className="hover:text-white transition-colors">Case Studies</Link></li>
                             <li><Link href="/pricing" className="hover:text-white transition-colors">Pricing</Link></li>
                         </ul>
@@ -48,8 +52,10 @@ export default function Footer() {
                     <div>
                         <h3 className="text-base sm:text-lg font-bold mb-4 sm:mb-6">Company</h3>
                         <ul className="space-y-3 sm:space-y-4 text-gray-400 text-sm sm:text-base">
-                            <li><Link href="/about" className="hover:text-white transition-colors">About</Link></li>
+                            <li><Link href="/about" className="hover:text-white transition-colors">About Us</Link></li>
+                            <li><Link href="/blog" className="hover:text-white transition-colors">Blog</Link></li>
                             <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
+                            <li><Link href="/careers" className="hover:text-white transition-colors">Careers</Link></li>
                         </ul>
                     </div>
 
@@ -65,10 +71,10 @@ export default function Footer() {
 
                 <div className="border-t border-white/10 pt-6 sm:pt-8 flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4">
                     <p className="text-gray-400 text-xs sm:text-sm text-center md:text-left">
-                        © {new Date().getFullYear()} Bonsoi Systems. All rights reserved.
+                        © {new Date().getFullYear()} BONSOI Systems. All rights reserved.
                     </p>
-                    <p className="text-gray-400 text-xs sm:text-sm">
-                        Designed for impact.
+                    <p className="text-gray-500 text-xs sm:text-sm">
+                        Built with precision. Designed for Impact.
                     </p>
                 </div>
             </div>

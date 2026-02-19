@@ -3,6 +3,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Twitter, Linkedin, Instagram, Github, MessageCircle } from "lucide-react";
 
 export default function Footer() {
@@ -12,12 +13,19 @@ export default function Footer() {
                 <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 md:gap-12 mb-8 sm:mb-10">
                     <div className="col-span-2 md:col-span-2 lg:col-span-1">
                         <Link href="/" className="tracking-tighter hover:opacity-80 transition-opacity">
-                            <img src="/img/squarelogo.png" alt="BONSOI Systems" className="w-36 sm:w-44 md:w-52" />
+                            <Image
+                                src="/img/squarelogo.png"
+                                alt="BONSOI Systems"
+                                width={208}
+                                height={83}
+                                className="w-36 sm:w-44 md:w-52 h-auto"
+                                priority
+                            />
                         </Link>
                         <p className="text-gray-400 mt-4 sm:mt-6 mb-1 sm:mb-2 text-sm sm:text-base">
                             Enterprise AI/ML, Web3, and Full-Stack development solutions that transform businesses worldwide.
                         </p>
-                        <p className="text-gray-500 mb-4 sm:mb-6 text-xs sm:text-sm">
+                        <p className="text-gray-400 mb-4 sm:mb-6 text-xs sm:text-sm">
                             Serving clients globally · Based in India
                         </p>
                         <div className="flex gap-3 sm:gap-4">
@@ -73,7 +81,7 @@ export default function Footer() {
                     <p className="text-gray-400 text-xs sm:text-sm text-center md:text-left">
                         © {new Date().getFullYear()} BONSOI Systems. All rights reserved.
                     </p>
-                    <p className="text-gray-500 text-xs sm:text-sm">
+                    <p className="text-gray-400 text-xs sm:text-sm">
                         Built with precision. Designed for Impact.
                     </p>
                 </div>

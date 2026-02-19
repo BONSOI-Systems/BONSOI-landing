@@ -86,9 +86,9 @@ export default function Hero() {
                                     fill
                                     priority
                                     fetchPriority="high"
-                                    quality={60}
+                                    quality={40}
                                     className="object-cover object-center opacity-70 mix-blend-overlay"
-                                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 512px, 50vw"
+                                    sizes="(max-width: 640px) min(100vw, 400px), (max-width: 1024px) 400px, 40vw"
                                 />
                                 <div className="relative z-10 text-left">
                                     {/* Static text for crawlers - visually hidden */}

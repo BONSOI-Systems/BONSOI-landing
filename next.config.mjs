@@ -16,6 +16,11 @@ const nextConfig = {
     compress: true,
     // Power header for security & SEO
     poweredByHeader: false,
+    // Inline critical CSS to eliminate render-blocking CSS requests
+    experimental: {
+        optimizeCss: true,
+    },
 };
+
 
 export default nextConfig;

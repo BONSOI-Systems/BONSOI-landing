@@ -1,0 +1,9 @@
+# Target modern evergreen browsers only — eliminates ~14 KiB of legacy polyfills
+# (Array.prototype.at, Object.hasOwn, flatMap, trimStart, etc. are all Baseline features)
+chrome >= 87
+firefox >= 78
+safari >= 14
+edge >= 88
+opera >= 73
+not ie 11
+not dead
